@@ -4,9 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "mqtt:listen": "ts-node src/mqtt-listener.ts"
   },
   "dependencies": {
+    "mqtt": "^5.13.3",
+    "ts-node": "^10.9.2",
+    "zod": "^4.0.5",
     "prettier": "^3.6.2"
   },
   "devDependencies": {
